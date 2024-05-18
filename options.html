@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="options.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body>
+
+    <div class="topnav">
+        <span class="logo">BlockMeOut</span>
+        <span id="dashboard_button">Dashboard</span>
+        <span id="keywords_button">Keywords</span>
+    </div>
+
+    <div id="dashboard_">
+
+        <div class="wrap_0">
+            <input type="text" name="web_add" id="web_add" placeholder="Add a site to block">
+            <button id="add_site_button">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+            </button>
+        </div>
+
+        <h1>Blocked Sites</h1>
+        <hr>
+
+        <div class="blockedSites">
+        </div>
+
+        <button id="save1"> Save </button>
+
+    </div>
+
+    <div id="keywords_">
+
+        <div class="wrap_1">
+            <input type="text" name="keyword_add" id="keyword_add" placeholder="Add new keyword">
+            <button id="add_key_button">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+            </button>
+        </div>
+
+        <h1>Blocked Keywords</h1>
+        <hr>
+
+        <div class="blockedKeys">
+        </div>
+
+        <button id="save2"> Save </button>
+
+    </div>
+
+    <script src="options.js" async defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+{
+    "manifest_version": 3,
+    "name": "BlockMeOut",
+    "version": "0.0.1",
+    "author": "Mradul Sonkar",
+    "options_page": "options.html",
+    "description": "A extension that helps you get rid of distracting websites",
+    "icons": {
+        "16": "logo1.png",
+        "48": "logo1.png",
+        "128": "logo1.png"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "logo1.png",
+        "default_title": "BlockMeOut"
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "watching_u.gif"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}

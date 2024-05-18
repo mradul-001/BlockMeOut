@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Freeman&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.103);
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 145, 255);
+  text-shadow: 0 0 10px rgb(0, 102, 255);
+}
+
+.topnav span {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px 30px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: kanit;
+  cursor: pointer;
+}
+
+.topnav span:hover {
+  background-color: rgb(59, 170, 255);
+  color: rgb(255, 255, 255);
+}
+
+.topnav span.logo {
+  background-color: rgb(0, 145, 255);
+  color: white;
+  font-size: 23px;
+  font-family: freeman;
+  padding: 25px 50px;
+}
+
+/*-------------------------------------------Dashboard--------------------------------------------------*/
+
+#dashboard_ {
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: none;
+}
+
+#dashboard_ .wrap_0 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#dashboard_ .wrap_0 input {
+  box-sizing: border-box;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  border: 1px solid rgb(0, 145, 255);
+}
+
+#dashboard_ .wrap_0 input:focus {
+  border: none;
+  outline: 2px solid rgb(0, 145, 255);
+}
+
+#dashboard_ .wrap_0 button {
+  padding: 9px;
+  cursor: pointer;
+  background: rgb(0, 145, 255);
+  border: none;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#dashboard_ .wrap_0 button:hover {
+  background: rgb(0, 102, 255);
+}
+
+#dashboard_ .wrap_0 button:focus{
+  outline: none;
+  border: none;
+}
+
+#dashboard_ h1 {
+  font-family: rajdhani;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px;
+  margin-top: 50px;
+}
+
+#dashboard_ hr {
+  color: black;
+}
+
+#dashboard_ .blockedSites {
+  height: 300px;
+  overflow-y: auto;
+}
+
+#dashboard_ .blockedSites .website {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  font-family: Nunito Sans;
+  font-size: 15px;
+}
+
+#dashboard_ .blockedSites .website:hover {
+  background: hwb(0 0% 100% / 0.208);
+}
+
+#dashboard_ .blockedSites .website .remove {
+  color: red;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#save1{
+  background: rgb(22, 115, 255);
+  border: none;
+  padding: 10px 20px;
+  font-family: rajdhani;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#save1:hover{
+  background: rgb(0, 102, 255);
+}
+
+#save1:focus{
+  border: none;
+  outline: none;
+}
+
+
+/*-------------------------------------------- Keywords --------------------------------------------------*/
+
+
+#keywords_ {
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  display: none;
+}
+
+#keywords_ .wrap_1 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+#keywords_ .wrap_1 input {
+  box-sizing: border-box;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  border: 1px solid rgb(0, 145, 255);
+}
+
+#keywords_ .wrap_1 input:focus {
+  border: none;
+  outline: 2px solid rgb(0, 145, 255);
+}
+
+#keywords_ .wrap_1 button {
+  padding: 9px;
+  cursor: pointer;
+  background: rgb(0, 145, 255);
+  border: none;
+  color: white;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#keywords_ .wrap_1 button:hover {
+  background: rgb(0, 102, 255);
+}
+
+#keywords_ h1 {
+  font-family: rajdhani;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 5px;
+  margin-top: 50px;
+}
+
+#keywords_ hr {
+  color: black;
+}
+
+#keywords_ .blockedKeys {
+  height: 300px;
+  overflow-y: auto;
+}
+
+#keywords_ .blockedKeys .keyword {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  font-family: Nunito Sans;
+  font-size: 15px;
+}
+
+#keywords_ .blockedKeys .keyword:hover {
+  background: hwb(0 0% 100% / 0.208);
+}
+
+#keywords_ .blockedKeys .keyword .remove {
+  color: red;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#save2{
+  background: rgb(22, 115, 255);
+  border: none;
+  padding: 10px 20px;
+  font-family: rajdhani;
+  font-size: 25px;
+  color: white;
+  font-weight: 500;
+  border-radius: 10px;
+  width: 100%;
+  cursor: pointer;
+}
+
+#save2:hover{
+  background: rgb(0, 102, 255);
+}
+
+#save2:focus{
+  border: none;
+  outline: none;
+}
